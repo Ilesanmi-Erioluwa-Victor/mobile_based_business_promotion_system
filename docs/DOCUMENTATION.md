@@ -3,11 +3,7 @@
 ## 1. Project Overview
 
 **Full project title:** Design and Implementation of a Mobile-Based Business Promotion System for Small Scale Enterprises  
-**Institution:** Delta State Polytechnic, Otefe-Oghara  
-**Department:** Computer Science (Software and Web Development)  
-**Academic level:** HND 2 Final Year Project  
-**Supervisor:** Mrs. L.M. Okoh  
-**Year:** 2026
+**Institution:** Delta State Polytechnic, Otefe-Oghara
 
 **Abstract:** BizPromo is a mobile-based web system that helps small-scale enterprises create business profiles, list products, publish promotions and receive customer inquiries. The system integrates Paystack payment processing so owners can pay a one-time listing fee and boost selected promotions for homepage visibility. Its goal is to provide affordable digital market reach for small-scale Nigerian enterprises.
 
@@ -23,16 +19,16 @@
 
 ## 3. Tech Stack
 
-| Layer | Technology | Purpose |
-| --- | --- | --- |
-| Frontend | React.js with Vite | Responsive user interface |
-| Styling | TailwindCSS | Mobile-first layout and reusable UI |
-| Backend | Node.js and Express.js | REST API and business logic |
-| Database | MongoDB with Mongoose | Persistent document storage |
-| Auth | JWT and bcrypt | Login security and password hashing |
-| Payments | Paystack Inline JS | Frontend payment popup |
-| Payments | Paystack REST API | Backend payment initialization and verification |
-| HTTP | axios | Client API calls and backend Paystack calls |
+| Layer    | Technology             | Purpose                                         |
+| -------- | ---------------------- | ----------------------------------------------- |
+| Frontend | React.js with Vite     | Responsive user interface                       |
+| Styling  | TailwindCSS            | Mobile-first layout and reusable UI             |
+| Backend  | Node.js and Express.js | REST API and business logic                     |
+| Database | MongoDB with Mongoose  | Persistent document storage                     |
+| Auth     | JWT and bcrypt         | Login security and password hashing             |
+| Payments | Paystack Inline JS     | Frontend payment popup                          |
+| Payments | Paystack REST API      | Backend payment initialization and verification |
+| HTTP     | axios                  | Client API calls and backend Paystack calls     |
 
 ## 4. System Architecture
 
@@ -55,29 +51,29 @@ Payment flow: React `PaystackButton` -> Express `/api/payments` -> Paystack API 
 
 ## 6. API Endpoints Reference
 
-| Method | Endpoint | Purpose |
-| --- | --- | --- |
-| POST | `/api/auth/register` | Register user and return JWT |
-| POST | `/api/auth/login` | Login user and return JWT |
-| GET | `/api/businesses` | List listed businesses |
-| GET | `/api/businesses/:id` | Get business with products and promotions |
-| POST | `/api/businesses` | Create business profile |
-| PUT | `/api/businesses/:id` | Update owned business |
-| DELETE | `/api/businesses/:id` | Delete owned business |
-| GET | `/api/products/business/:businessId` | List products |
-| POST | `/api/products` | Add product |
-| PUT | `/api/products/:id` | Update product |
-| DELETE | `/api/products/:id` | Delete product |
-| GET | `/api/promotions/business/:businessId` | List business promotions |
-| POST | `/api/promotions` | Create promotion |
-| DELETE | `/api/promotions/:id` | Delete promotion |
-| POST | `/api/inquiries` | Send inquiry |
-| GET | `/api/inquiries/business/:id` | View business inquiries |
-| PATCH | `/api/inquiries/:id/read` | Mark inquiry as read |
-| GET | `/api/search` | Search listed businesses |
-| POST | `/api/payments/initialize` | Initialize listing or boost payment |
-| GET | `/api/payments/verify/:reference` | Verify Paystack payment |
-| GET | `/api/payments/history` | Return owner payment history |
+| Method | Endpoint                               | Purpose                                   |
+| ------ | -------------------------------------- | ----------------------------------------- |
+| POST   | `/api/auth/register`                   | Register user and return JWT              |
+| POST   | `/api/auth/login`                      | Login user and return JWT                 |
+| GET    | `/api/businesses`                      | List listed businesses                    |
+| GET    | `/api/businesses/:id`                  | Get business with products and promotions |
+| POST   | `/api/businesses`                      | Create business profile                   |
+| PUT    | `/api/businesses/:id`                  | Update owned business                     |
+| DELETE | `/api/businesses/:id`                  | Delete owned business                     |
+| GET    | `/api/products/business/:businessId`   | List products                             |
+| POST   | `/api/products`                        | Add product                               |
+| PUT    | `/api/products/:id`                    | Update product                            |
+| DELETE | `/api/products/:id`                    | Delete product                            |
+| GET    | `/api/promotions/business/:businessId` | List business promotions                  |
+| POST   | `/api/promotions`                      | Create promotion                          |
+| DELETE | `/api/promotions/:id`                  | Delete promotion                          |
+| POST   | `/api/inquiries`                       | Send inquiry                              |
+| GET    | `/api/inquiries/business/:id`          | View business inquiries                   |
+| PATCH  | `/api/inquiries/:id/read`              | Mark inquiry as read                      |
+| GET    | `/api/search`                          | Search listed businesses                  |
+| POST   | `/api/payments/initialize`             | Initialize listing or boost payment       |
+| GET    | `/api/payments/verify/:reference`      | Verify Paystack payment                   |
+| GET    | `/api/payments/history`                | Return owner payment history              |
 
 ## 7. Features
 
